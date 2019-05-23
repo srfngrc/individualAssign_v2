@@ -1,0 +1,10 @@
+C:\VSRepositories\individualAssign_v2\obj\Debug\Indiv_AssignSRFN.csprojAssemblyReference.cache
+C:\VSRepositories\individualAssign_v2\obj\Debug\Indiv_AssignSRFN.Form1.resources
+C:\VSRepositories\individualAssign_v2\obj\Debug\Indiv_AssignSRFN.Properties.Resources.resources
+C:\VSRepositories\individualAssign_v2\obj\Debug\Indiv_AssignSRFN.csproj.GenerateResource.cache
+C:\VSRepositories\individualAssign_v2\obj\Debug\Indiv_AssignSRFN.csproj.CoreCompileInputs.cache
+C:\VSRepositories\individualAssign_v2\bin\Debug\Indiv_AssignSRFN.exe.config
+C:\VSRepositories\individualAssign_v2\bin\Debug\Indiv_AssignSRFN.exe
+C:\VSRepositories\individualAssign_v2\bin\Debug\Indiv_AssignSRFN.pdb
+C:\VSRepositories\individualAssign_v2\obj\Debug\Indiv_AssignSRFN.exe
+C:\VSRepositories\individualAssign_v2\obj\Debug\Indiv_AssignSRFN.pdb
