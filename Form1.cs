@@ -17,6 +17,8 @@ namespace Indiv_AssignSRFN
             InitializeComponent();
         }
 
+     
+
         int OptionSelected_MACHINE = 0;
         int OptionSelected_USER = 0;
         string Final_Result;
@@ -35,6 +37,7 @@ namespace Indiv_AssignSRFN
             OptionSelected_MACHINE = 0;
             OptionSelected_MACHINE = RN_rockpaperscissors.Next(1, 4);
             pictureBox1.Image = global::Indiv_AssignSRFN.Properties.Resources.QUESTIONMARK;
+            txt_RESULT.Visible = false;
         }
 
         public void PictureBox2_Click(object sender, EventArgs e)
@@ -78,57 +81,53 @@ namespace Indiv_AssignSRFN
             {
                 Final_Result = "DRAW. Play again! :)";
                 picSmurf_RESULT.Image = global::Indiv_AssignSRFN.Properties.Resources.SMURFdraw;
-                //return;
             }
 
             else if (OptionSelected_MACHINE == 1 && OptionSelected_USER == 2)
             {
                 Final_Result = "USER WON!";
                 picSmurf_RESULT.Image = global::Indiv_AssignSRFN.Properties.Resources.SMURFWon;
-                //return;
             }
             else if (OptionSelected_MACHINE == 1 && OptionSelected_USER == 3)
             {
                 Final_Result = "MACHINE WON!";
                 picSmurf_RESULT.Image = global::Indiv_AssignSRFN.Properties.Resources.SMURFlost1;
-                //return;
             }
             else if (OptionSelected_MACHINE == 2 && OptionSelected_USER == 1)
             {
                 Final_Result = "MACHINE WON!";
                 picSmurf_RESULT.Image = global::Indiv_AssignSRFN.Properties.Resources.SMURFlost1;
-                //return;
             }
             else if (OptionSelected_MACHINE == 2 && OptionSelected_USER == 3)
             {
                 Final_Result = "USER WON!";
                 picSmurf_RESULT.Image = global::Indiv_AssignSRFN.Properties.Resources.SMURFWon;
-                //return;
             }
             else if (OptionSelected_MACHINE == 3 && OptionSelected_USER == 1)
             {
                 Final_Result = "USER WON!";
                 picSmurf_RESULT.Image = global::Indiv_AssignSRFN.Properties.Resources.SMURFWon;
-                //return;
             }
             else if (OptionSelected_MACHINE == 3 && OptionSelected_USER == 2)
             {
                 Final_Result = "MACHINE WON!";
                 picSmurf_RESULT.Image = global::Indiv_AssignSRFN.Properties.Resources.SMURFlost1;
-                //return;
             }
 
+            txt_RESULT.Visible = true;
             txt_RESULT.Text = Final_Result;
         }
 
         private void Btn_Exit_Click(object sender, EventArgs e)
         {
-            Close();
+            Form2 secondWindow = new Form2();
+            secondWindow.Show();
         }
 
         private void PicSmurf_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("DO NOT TOUCH THE SMURF!!!!  :(");
+            //Console.WriteLine("DO NOT TOUCH THE SMURF!!!!  :(");
+            MessageBox.Show("DO NOT TOUCH THE SMURF!!!!  :(");
         }
 
     }
