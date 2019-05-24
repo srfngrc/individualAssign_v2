@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SMURF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Smurf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\S038PN01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\ROCK.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\PAPER.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\SCISSORS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\QUESTIONMARK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\SMURFlost.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\SMURFwaiting.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\SMURFWon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\SMURFdraw.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
