@@ -33,7 +33,7 @@ namespace Indiv_AssignSRFN
         {
             OptionSelected_USER = 0;
             OptionSelected_MACHINE = 0;
-            OptionSelected_MACHINE = RN_rockpaperscissors.Next(1, 3);
+            OptionSelected_MACHINE = RN_rockpaperscissors.Next(1, 4);
             pictureBox1.Image = global::Indiv_AssignSRFN.Properties.Resources.QUESTIONMARK;
         }
 
@@ -78,37 +78,44 @@ namespace Indiv_AssignSRFN
             {
                 Final_Result = "DRAW. Play again! :)";
                 picSmurf_RESULT.Image = global::Indiv_AssignSRFN.Properties.Resources.SMURFdraw;
+                //return;
             }
 
-            if (OptionSelected_MACHINE == 1 && OptionSelected_USER == 2)
+            else if (OptionSelected_MACHINE == 1 && OptionSelected_USER == 2)
             {
                 Final_Result = "USER WON!";
                 picSmurf_RESULT.Image = global::Indiv_AssignSRFN.Properties.Resources.SMURFWon;
+                //return;
             }
-            if (OptionSelected_MACHINE == 1 && OptionSelected_USER == 3)
+            else if (OptionSelected_MACHINE == 1 && OptionSelected_USER == 3)
             {
                 Final_Result = "MACHINE WON!";
                 picSmurf_RESULT.Image = global::Indiv_AssignSRFN.Properties.Resources.SMURFlost1;
+                //return;
             }
-            if (OptionSelected_MACHINE == 2 && OptionSelected_USER == 1)
+            else if (OptionSelected_MACHINE == 2 && OptionSelected_USER == 1)
             {
                 Final_Result = "MACHINE WON!";
                 picSmurf_RESULT.Image = global::Indiv_AssignSRFN.Properties.Resources.SMURFlost1;
+                //return;
             }
-            if (OptionSelected_MACHINE == 2 && OptionSelected_USER == 3)
+            else if (OptionSelected_MACHINE == 2 && OptionSelected_USER == 3)
             {
                 Final_Result = "USER WON!";
                 picSmurf_RESULT.Image = global::Indiv_AssignSRFN.Properties.Resources.SMURFWon;
+                //return;
             }
-            if (OptionSelected_MACHINE == 3 && OptionSelected_USER == 1)
+            else if (OptionSelected_MACHINE == 3 && OptionSelected_USER == 1)
             {
                 Final_Result = "USER WON!";
                 picSmurf_RESULT.Image = global::Indiv_AssignSRFN.Properties.Resources.SMURFWon;
+                //return;
             }
-            if (OptionSelected_MACHINE == 3 && OptionSelected_USER == 2)
+            else if (OptionSelected_MACHINE == 3 && OptionSelected_USER == 2)
             {
                 Final_Result = "MACHINE WON!";
                 picSmurf_RESULT.Image = global::Indiv_AssignSRFN.Properties.Resources.SMURFlost1;
+                //return;
             }
 
             txt_RESULT.Text = Final_Result;
